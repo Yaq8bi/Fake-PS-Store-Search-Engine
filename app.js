@@ -2,6 +2,7 @@
 const h1 = document.querySelector('h1');
 h1.innerText = 'Latest Games.inc';
 */
+const body = document.querySelector('body');
 //image
 const img = document.createElement('img');
 img.style.maxWidth = '25rem';
@@ -21,6 +22,33 @@ const button = document.querySelector('button');
 // Statement leder till en handling.
 // '=' och '.' Är operatorer i exemplet ovanför.
 
+
+//MMatemtik functionsnini kullanarak rastgele seyler yapabilirsin.
+
+function changeColor() {
+    const randNum = Math.trunc(Math.random() * 5) + 3;
+    console.log(randNum);
+
+    if (randNum == 3) {
+    body.style.background = 'grey';
+    };
+    if (randNum == 6) {
+    body.style.background = 'royalBlue';
+};
+    
+    if (randNum == 5) {
+    body.style.background = 'green';
+};
+    if (randNum == 7) {
+    body.style.background = 'pink';
+};
+    
+    if (randNum == 4) {
+    body.style.background = 'aliceblue'};
+
+};
+
+// Functions
 document.addEventListener('keydown', function(a) {
  if (a.key == 'Enter'){
      refresh();

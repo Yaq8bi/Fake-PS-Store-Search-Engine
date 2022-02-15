@@ -6,6 +6,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -48,4 +50,19 @@ aside {
 .ps-logo {
     max-width: 15rem;
     margin-bottom: 1rem;
+}
+
+
+
+@media screen and (max-width: 960px) {
+    button:first-child {
+    position: relative;
+}
+
+aside {
+    position: relative;
+    padding: 0;
+    margin-left: -5vw;
+}
+
 }
